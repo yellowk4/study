@@ -1,26 +1,22 @@
 {
-    "liveSassCompile.settings.formats":[
-       {
-           "format": "expanded",
-           "extensionName": ".css",
-           "savePath": "/css"
-       },
-       {
+	"liveSassCompile.settings.formats":[
+		{
+				"extensionName": ".css",
+				"format": "expanded",
+				"savePath": "/h5bp/css"
+		},
+        {
            "extensionName": ".min.css",
            "format": "compressed",
-           "savePath": "/css"
+           "savePath": "/h5bp/css"
        }
-   ],
-   "liveSassCompile.settings.includeItems": [
-			"bulma.scss"
 	],
-   "liveSassCompile.settings.excludeList": [
-      "**/node_modules/**",
-      ".vscode/**"
-   ],
-   "liveSassCompile.settings.generateMap": false,
-   "liveSassCompile.settings.autoprefix": [
-       "> 1%",
-       "last 2 versions"
-   ]
+	"liveSassCompile.settings.includeItems": [
+			"h5bp/bulma.scss"
+	],
+	"liveSassCompile.settings.generateMap": true,
+	"liveSassCompile.settings.autoprefix": [
+			"> 1%",
+			"last 2 versions"
+	]
 }
