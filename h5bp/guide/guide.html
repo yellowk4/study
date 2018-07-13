@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+	/>
+	<meta name="format-detection" content="telephone=no" />
+	<title>Template | Guide</title>
+	<link type="text/css" rel="stylesheet" href="./inc/css/shCoreDefault.css" />
+	<link type="text/css" rel="stylesheet" href="./inc/css/guide.css" />
+	<!-- jquery 경로에 주의! -->
+	<script type="text/javascript" src="/js/vendor/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="./inc/js/shCore.js"></script>
+	<script type="text/javascript" src="./inc/js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="./inc/js/guideUi.js"></script>
+</head>
+
+<body>
+	<div id="guideWrap">
+		<!-- Guide Header -->
+		<div id="guideHeader">
+			<h1>Template</h1>
+			<p class="left">Guide</p>
+		</div>
+		<!-- //Guide Header -->
+
+		<!-- Guide Contents -->
+		<div id="guideContents">
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">[웹] 하위 브라우저 지원 범위</h2>
+				<div class="info">
+					<p>Internet Explorer 9 이상</p>
+				</div>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">[모바일] 기준 사이즈 정의</h2>
+				<div class="info">
+					<p>디자인 기준 사이즈에 따라 퍼블에서 배율 작업 방향이 결정 (보통은 320px 기준)</p>
+				</div>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">DOCTYPE</h2>
+				<div class="info">
+					<p>&lt;!DOCTYPE html&gt;</p>
+				</div>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">Class Naming</h2>
+				<div class="info">
+					<p>카멜 표기법 사용</p>
+				</div>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">Images Naming</h2>
+				<div class="info">
+					<p>이미지의 특성에 맞게 파일명 적용</p>
+				</div>
+				<ul class="listDot">
+					<li>백그라운드 -
+						<em>bg_파일명</em>
+					</li>
+					<li>아이콘 -
+						<em>ico_파일명</em>
+					</li>
+					<li>버튼 -
+						<em>btn_파일명</em>
+					</li>
+					<li>기호 -
+						<em>bu_파일명</em>
+					</li>
+				</ul>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">주석 표기법</h2>
+				<div class="info">
+					<p>한줄 주석과 묶음 주석 혼용 사용</p>
+				</div>
+				<div class="code">
+					<pre class="brush: js;">
+	<!-- //2018-05-30 한줄 주석 -->
+
+	<!-- 2018-05-30 묶음 주석 시작 -->
+	<!-- //2018-05-30 묶음 주석 끝 -->
+</pre>
+				</div>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">Font</h2>
+				<div class="info">
+					<p>기본 폰트 사이즈
+						<em>16px</em>기준</p>
+					<p>기본 폰트 설정 font-family:
+						<em>ng</em>;</p>
+				</div>
+				<ul class="listDot">
+					<li>font-family:
+						<em>ng</em>;</li>
+					<li>font-family:
+						<em>ngB</em>;</li>
+				</ul>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">CSS</h2>
+				<ul class="listDot">
+					<li>default.css -
+						<em>Reset</em> 및
+						<em>font</em>설정</li>
+					<li>layout.css -
+						<em>layout</em> 및
+						<em>공통요소</em> 설정</li>
+					<li>admin.css -
+						<em>관리자화면</em> 설정</li>
+					<li>main.css -
+						<em>메인화면</em> 설정</li>
+					<li>business.css -
+						<em>대메뉴별 css</em> 설정</li>
+					<li>corporate.css -
+						<em>대메뉴별 css</em> 설정</li>
+					<li>ir.css -
+						<em>대메뉴별 css</em> 설정</li>
+				</ul>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">Mediaquery</h2>
+				<ul class="listDot">
+					<li>
+						<em>PC First</em>로 작업</li>
+					<li>모바일(~1024px) - @media screen and (max-width:1024px)</li>
+				</ul>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section -->
+			<div class="section">
+				<h2 class="guideTit">JS</h2>
+				<ul class="listDot">
+					<li>jquery-1.12.4.min.js - jQuery 라이브러리 파일</li>
+					<li>TweenMax.min.js - 애니메이션 라이브러리 파일</li>
+					<li>html5.js - 반응형웹 html5 태그 사용 관련 js</li>
+					<li>respond.js - 반응형웹 js</li>
+					<li>swiper.min.js - 스와이핑 라이브러리</li>
+					<li>admin.js - 관리자화면 js</li>
+					<li>common.js - UI관련 JS 모음 파일</li>
+				</ul>
+			</div>
+			<!-- //Section -->
+
+			<!-- Section 
+		<div class="section">
+			<h2 class="guideTit">Guide Code</h2>
+			<div class="code">
+<pre class="brush: js;">
+	<div class="btn_left">
+		<a class="btn_green" href="javascript:;">닫기</a>
+		<a class="btn_green" href="javascript:;">네글자이상</a>
+	</div>
+</pre>
+			</div>
+		</div>
+		<!-- //Section -->
+		</div>
+		<!-- //Guide Contents -->
+
+		<!-- Footer -->
+		<div id="footer">Media4th&amp;Company</div>
+		<!-- // Footer -->
+	</div>
+</body>
+
+</html>
