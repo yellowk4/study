@@ -125,3 +125,26 @@ address {
 }
 
 /* PC영역 */
+
+/* .dropdown.is-hoverable:hover .fa-angle-down:before {
+  content: "\f106";
+} */
+
+.navbar-link:not(.is-arrowless)::after,
+.navbar-link:not(.is-multiple):not(.is-loading)::after {
+  border-radius: 2px;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  display: block;
+  height: 0.625em;
+  margin-top: -0.4375em;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  width: 0.625em;
+}
