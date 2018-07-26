@@ -134,6 +134,7 @@ textarea {
 /* 기본 설정값으로 초기화 */
 
 table {
+    width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
 }
@@ -535,11 +536,29 @@ input[type="text"]::-ms-clear {
     top: 0;
 }
 
-/* 2018-05-04 : 프린트 스타일 추가 */
+/* 폼그룹 -input 공통 */
 
-/* @media only print { .conTitWrap h2 {height: 20px; } 
-.conTitWrap .location span {height:30px;padding-bottom:10px;margin:0; } 
-.conTitWrap .location span::after {content: ">";display: inline-block;clear: both;position: relative;top: 1px;width: 6px;height: 11px;margin-left: 9px;color: #000; } 
-.conTitWrap .location .home { padding-left:0; } 
-.utility, .footer .footMenuWrap {display: none; } 
-} */
+input {
+    width: 100%;
+    max-width: 115px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+input.mw170 {
+    max-width: 170px;
+}
+
+select {
+    padding: 7px 24px 5px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('/img/select_arrow.png') no-repeat 88% 50%;
+    /* 화살표 아이콘 추가 */
+}
+
+select::-ms-expand {
+    display: none;
+    /* 화살표 없애기 for IE10, 11*/
+}

@@ -37,11 +37,12 @@
 
             <ol class="stepArea">
                 <li class="finish">
-                    <span class="blind">완료</span>
+                    <span>완료</span>
                 </li>
                 <li class="current">
-                    <span class="blind">진행중</span>
-                    <span>STEP 02
+                    <i class="icoDoc"></i>
+                    <span>
+                        STEP 02
                         <em>계약정보입력</em>
                     </span>
                 </li>
@@ -58,7 +59,7 @@
 
             <article>
                 <h4>계약자정보입력</h4>
-                <div class="defaultTable typeA">
+                <div class="defaultTable">
                     <table>
                         <caption>계약자정보입력</caption>
                         <colgroup>
@@ -72,8 +73,8 @@
                                 <th>이름</th>
                                 <td>
                                     <span class="inputArea">
-                                        <label for="name">이름</label>
-                                        <input id="name" value="김문식">
+                                        <label for="name" class="blind">이름</label>
+                                        <input id="name" value="김문식" class="mw170">
                                     </span>
                                 </td>
                                 <th>주민등록번호</th>
@@ -87,9 +88,10 @@
                                     <select>
                                         <option>010</option>
                                         <option>011</option>
-                                    </select> -
+                                    </select>
+                                    <em class="space">-</em>
                                     <span class="inputArea">
-                                        <label for="phone">휴대전화 뒷자리</label>
+                                        <label for="phone" class="blind">휴대전화 뒷자리</label>
                                         <input id="phone" value="" placeholder="-없이 입력">
                                     </span>
                                 </td>
@@ -98,11 +100,30 @@
                                     <select>
                                         <option>02</option>
                                         <option>053</option>
-                                    </select> -
+                                    </select>
+                                    <em class="space">-</em>
                                     <span class="inputArea">
-                                        <label for="tel">자택번호 뒷자리</label>
+                                        <label for="tel" class="blind">자택번호 뒷자리</label>
                                         <input id="tel" value="" placeholder="-없이 입력">
                                     </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td colspan="3">
+                                    <span class="inputArea">
+                                        <label for="mail" class="blind">이메일명</label>
+                                        <input id="mail" value="" placeholder="" class="mw170">
+                                    </span>
+                                    <em class="space">@</em>
+                                    <span class="inputArea">
+                                        <label for="domain" class="blind">이메일 도메인명</label>
+                                        <input id="domain" value="" placeholder="" class="mw170">
+                                    </span>
+                                    <select>
+                                        <option>직접입력</option>
+                                        <option>naver.com</option>
+                                    </select>
                                 </td>
                             </tr>
                             <tr>
@@ -110,7 +131,7 @@
                                 <td colspan="3">
                                     <p>
                                         <span class="inputArea">
-                                            <label for="zipcode">우편번호</label>
+                                            <label for="zipcode" class="blind">우편번호</label>
                                             <input id="zipcode" value="10002">
                                         </span>
                                         <button type="button" class="btn btnS btnTypeA">
@@ -119,11 +140,11 @@
                                     </p>
                                     <p>
                                         <span class="inputArea">
-                                            <label for="roadAddr">도로명 주소</label>
+                                            <label for="roadAddr" class="blind">도로명 주소</label>
                                             <input id="roadAddr" value="" placeholder="도로명 주소">
                                         </span>
                                         <span class="inputArea">
-                                            <label for="detailAddr">상세 주소</label>
+                                            <label for="detailAddr" class="blind">상세 주소</label>
                                             <input id="detailAddr" value="" placeholder="상세 주소">
                                         </span>
                                     </p>
@@ -132,22 +153,22 @@
                             <tr>
                                 <th>직장주소</th>
                                 <td colspan="3">
-                                    <p>
+                                    <p class="lineChg">
                                         <span class="inputArea">
-                                            <label for="zipcode">우편번호</label>
+                                            <label for="zipcode" class="blind">우편번호</label>
                                             <input id="zipcode" value="10002">
                                         </span>
                                         <button type="button" class="btn btnS btnTypeA">
                                             <span>주소찾기</span>
                                         </button>
                                     </p>
-                                    <p>
+                                    <p class="lineChg">
                                         <span class="inputArea">
-                                            <label for="roadAddr">도로명 주소</label>
+                                            <label for="roadAddr" class="blind">도로명 주소</label>
                                             <input id="roadAddr" value="" placeholder="도로명 주소">
                                         </span>
                                         <span class="inputArea">
-                                            <label for="detailAddr">상세 주소</label>
+                                            <label for="detailAddr" class="blind">상세 주소</label>
                                             <input id="detailAddr" value="" placeholder="상세 주소">
                                         </span>
                                     </p>
@@ -298,7 +319,7 @@
 
             <article>
                 <h4>세금우대한도설정</h4>
-                <div class="defaultTable typeA">
+                <div class="defaultTable">
                     <table>
                         <caption>세금우대한도설정</caption>
                         <colgroup>
@@ -446,7 +467,7 @@
 
             <article>
                 <h4>자동이체신청</h4>
-                <div class="defaultTable typeA">
+                <div class="defaultTable">
                     <table>
                         <caption>자동이체신청</caption>
                         <colgroup>
@@ -525,7 +546,7 @@
                         <br/>예) 자동이체시작일 : 2015년, 이체일 : 25일 을 선택한 경우 2015년 11월 부터 매월 25일 자동이체금액을 자동으로 청구합니다.)</li>
                     <li>이체일에 통장 잔액부족 등 기타 사유로 인해 이체되지 못할 경우 재 이체하지 않습니다.(자유납입이므로 매월 한번만 이체)</li>
                 </ul>
-                <div class="defaultTable typeB">
+                <div class="defaultTable typeA">
                     <table>
                         <caption>자동이체약관동의</caption>
                         <colgroup>

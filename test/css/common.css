@@ -1,0 +1,198 @@
+@charset "utf-8";
+#container {
+    padding: 50px;
+}
+
+/* 서브 상단 공통 subTop */
+
+.subTop {
+    position: relative;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #ddd;
+}
+
+.subTop h3 {
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #121212;
+}
+
+.subTop ol {
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+.subTop ol li {
+    float: left;
+    font-size: 12px;
+    color: #121212;
+}
+
+.subTop ol li:after {
+    content: '>';
+    display: inline-block;
+    width: 10px;
+    padding-left: 7px;
+    font-size: 10px;
+    color: #707070;
+}
+
+.subTop ol li:last-child {
+    color: #956b29;
+}
+
+.subTop ol li:last-child:after {
+    display: none;
+}
+
+/* 서브 상단 스텝 stepArea */
+
+.stepArea {
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.stepArea li {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+}
+
+.stepArea li:before {
+    content: '>';
+    display: inline-block;
+    width: 20px;
+    padding-right: 10px;
+    font-size: 12px;
+    color: #707070;
+}
+
+.stepArea li:first-child:before {
+    display: none;
+}
+
+.stepArea li span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #e9e9e9;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 33px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+
+.stepArea .finish span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4d4d4d;
+    border-radius: 100%;
+}
+
+.stepArea .finish span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 14px;
+    margin: 5px 0 0 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.stepArea .current .icoDoc {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #d91f26 url(/img/ico_doc.png) no-repeat 50% 50%;
+    background-size: 24px 30px;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.stepArea .current span {
+    width: auto;
+    height: auto;
+    margin-left: 5px;
+    background: none;
+    color: #d91f26;
+    text-align: left;
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
+.stepArea .current span em {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 서브 컨텐츠 article */
+
+article h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #454545;
+}
+
+article h4 .choice {
+    color: #4566a2;
+}
+
+/* 공통 테이블 요소 */
+
+.defaultTable {
+    margin-bottom: 50px;
+    border-top: 2px solid #4d4d4d;
+}
+
+.defaultTable .widthS {
+    width: 14%;
+}
+
+.defaultTable .widthM {
+    width: 36%;
+}
+
+.defaultTable .widthL {
+    width: auto;
+}
+
+.defaultTable th,
+.defaultTable td {
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 13px;
+    color: #333;
+}
+
+.defaultTable th {
+    padding: 15px 20px;
+    background: #f5f5f5;
+    text-align: left;
+}
+
+.defaultTable td {
+    padding: 10px;
+}
+
+.defaultTable .space {
+    margin: 0 10px;
+    color: #717272;
+}
+
+.defaultTable .inputArea+select {
+    margin-left: 10px;
+}
+
+.defaultTable .lineChg {
+    margin-bottom: 10px;
+}
