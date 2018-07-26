@@ -27,12 +27,12 @@
         <nav></nav>
         <div id="container">
             <div class="subTop">
-                <h3>IRP가입</h4>
-                    <ol>
-                        <li>퇴직연금</li>
-                        <li>퇴직연금가입</li>
-                        <li>IRP가입</li>
-                    </ol>
+                <h3>IRP가입</h3>
+                <ol>
+                    <li>퇴직연금</li>
+                    <li>퇴직연금가입</li>
+                    <li>IRP가입</li>
+                </ol>
             </div>
 
             <ol class="stepArea">
@@ -345,48 +345,220 @@
             <article>
                 <h4>납입정보</h4>
 
-                <div class="tabs">
-
+                <ul class="tabs">
+                    <li>
+                        <a href="#tab1">즉시출금</a>
+                    </li>
+                    <li>
+                        <a href="#tab2">가상계좌</a>
+                    </li>
+                </ul>
+                <div id="tab1">
+                    <h5 class="blind">즉시출금</h5>
+                    <div class="defaultTable">
+                        <table>
+                            <caption>즉시출금</caption>
+                            <colgroup>
+                                <col class="widthS">
+                                <col class="widthL">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>납입금액</th>
+                                    <td>
+                                        <span class="inputArea">
+                                            <label for="payPrice">납입금액</label>
+                                            <input id="payPrice" value="" placeholder="">
+                                        </span>
+                                        원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>계좌번호</th>
+                                    <td>
+                                        <select>
+                                            <option>은행선택</option>
+                                            <option>국민은행</option>
+                                        </select>
+                                        <span class="inputArea">
+                                            <label for="account">계좌번호</label>
+                                            <input id="account" value="" placeholder="-없이 입력">
+                                        </span>
+                                        <button type="button" class="btn btnS btnTypeA">
+                                            <span>계좌확인</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>예금주명</th>
+                                    <td>
+                                        <span class="inputArea">
+                                            <label for="accountName">예금주명</label>
+                                            <input id="accountName" value="" placeholder="">
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ul class="listTypeDot ">
+                        <li>개인추가납입은 IRP 계약심사 완료 후 납입금액이 출금되며, 계약이 완료됩니다.</li>
+                    </ul>
                 </div>
+                <div id="tab2">
+                    <h5 class="blind">가상계좌</h5>
+                    <div class="defaultTable">
+                        <table>
+                            <caption>가상계좌</caption>
+                            <colgroup>
+                                <col class="widthS">
+                                <col class="widthL">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>납입금액</th>
+                                    <td>
+                                        <span class="inputArea">
+                                            <label for="payPrice">납입금액</label>
+                                            <input id="payPrice" value="" placeholder="">
+                                        </span>
+                                        원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>입금전용계좌</th>
+                                    <td>
+                                        <select>
+                                            <option>은행선택</option>
+                                            <option>국민은행</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ul class="listTypeDot ">
+                        <li>입금전용계좌로 선택하신 은행에 고객님의 이름으로 가상계좌가 개설 됩니다.</li>
+                        <li>가입신청 후 가상계좌번호로 납입예정금액을 입금해 주셔야 계약이 완료됩니다.</li>
+                    </ul>
+                </div>
+            </article>
 
-                <div class="defaultTable">
+            <article>
+                <h4>자동이체신청</h4>
+                <div class="defaultTable typeA">
                     <table>
-                        <caption>소득금액증명서 제출</caption>
+                        <caption>자동이체신청</caption>
                         <colgroup>
                             <col class="widthS">
-                            <col class="widthL">
+                            <col class="widthM">
+                            <col class="widthS">
+                            <col class="widthM">
                         </colgroup>
                         <tbody>
                             <tr>
-                                <th>발급번호</th>
-                                <td>
+                                <th>신청여부</th>
+                                <td colspan="3">
                                     <span class="inputArea">
-                                        <label for="issueNo1">발급번호 첫번째 4자리</label>
-                                        <input id="issueNo1" value=" " placeholder="4자리">
+                                        <input type="radio" id="apply" name="applyChk" checked>
+                                        <label for="apply">신청</label>
                                     </span>
                                     <span class="inputArea">
-                                        <label for="issueNo2">발급번호 두번째 4자리</label>
-                                        <input id="issueNo2" value=" " placeholder="4자리">
-                                    </span>
-                                    <span class="inputArea">
-                                        <label for="issueNo3">발급번호 세번째 4자리</label>
-                                        <input id="issueNo3" value=" " placeholder="4자리">
-                                    </span>
-                                    <span class="inputArea">
-                                        <label for="issueNo4">발급번호 네번째 4자리</label>
-                                        <input id="issueNo4" value=" " placeholder="4자리">
+                                        <input type="radio" id="applyN" name="applyChk">
+                                        <label for="applyN">신청안함</label>
                                     </span>
                                 </td>
+                            </tr>
+                            <tr>
+                                <th>자동이체금액</th>
+                                <td colspan="3">
+                                    <span class="inputArea">
+                                        <label for="autoPrice">자동이체금액</label>
+                                        <input id="autoPrice" value="" placeholder="">
+                                    </span>
+                                    원
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>계좌번호</th>
+                                <td colspan="3">
+                                    <select>
+                                        <option>은행선택</option>
+                                        <option>국민은행</option>
+                                    </select>
+                                    <span class="inputArea">
+                                        <label for="autoAcc">계좌번호</label>
+                                        <input id="autoAcc" value="" placeholder="-없이 입력">
+                                    </span>
+                                    <button type="button" class="btn btnS btnTypeA">
+                                        <span>계좌확인</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>예금주명</th>
+                                <td>
+                                    <span class="inputArea">
+                                        <label for="autoName">예금주명</label>
+                                        <input id="autoName" value="" placeholder="">
+                                    </span>
+                                </td>
+                                <th>신청내용</th>
+                                <td>신규</td>
+                            </tr>
+                            <tr>
+                                <th>이체일</th>
+                                <td>
+                                    <select>
+                                        <option>은행선택</option>
+                                        <option>국민은행</option>
+                                    </select>
+                                </td>
+                                <th>자동이체시작일</th>
+                                <td>2017년 11월 25일</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <ul class="listTypeDot ">
-                    <li>국세청 홈페이지에서 소득금액증명원 발급이 가능하며, 인터넷열람용으로 제공됩니다.</li>
-                    <li> 준비된 서류가 있으면 입력해 주세요. 소득금액증서류 제출을 대체할 수 있습니다.</li>
+                    <li>자동이체를 신청하시면 자동이체시작일일부터 매월 자동이체금액을 이체합니다.
+                        <br/>예) 자동이체시작일 : 2015년, 이체일 : 25일 을 선택한 경우 2015년 11월 부터 매월 25일 자동이체금액을 자동으로 청구합니다.)</li>
+                    <li>이체일에 통장 잔액부족 등 기타 사유로 인해 이체되지 못할 경우 재 이체하지 않습니다.(자유납입이므로 매월 한번만 이체)</li>
                 </ul>
+                <div class="defaultTable typeB">
+                    <table>
+                        <caption>자동이체약관동의</caption>
+                        <colgroup>
+                            <col class="widthL">
+                            <col class="widthS">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="inputArea">
+                                        <input type="checkbox" id="autoAgree" name="" checked>
+                                        <label for="autoAgree">자동이체약관동의</label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btnS btnTypeB">
+                                        <span>전문보기</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </article>
 
+            <div class="btnWrap">
+                <button type="button" class="btn btnL btnTypePrev">
+                    <span>이전</span>
+                </button>
+                <button type="button" class="btn btnL btnTypeNext">
+                    <span>다음</span>
+                </button>
+            </div>
         </div>
         <!-- //container -->
     </section>
