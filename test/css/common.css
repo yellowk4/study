@@ -159,7 +159,8 @@ article h4 .choice {
 }
 
 .defaultTable .widthS {
-    width: 15%;
+    /* width: 15%; */
+    width: 130px;
 }
 
 .defaultTable .widthM {
@@ -194,7 +195,8 @@ article h4 .choice {
 
 .defaultTable .inputArea+select,
 .defaultTable .inputArea+.inputArea,
-.defaultTable .inputArea+.btn {
+.defaultTable .inputArea+.btn,
+.defaultTable select+.inputArea {
     margin-left: 10px;
 }
 
@@ -207,13 +209,28 @@ article h4 .choice {
     margin-bottom: 10px;
 }
 
+.defaultTable .heightCen {
+    height: 29px;
+    line-height: 29px;
+}
+
+.defaultTable.typeA .widthS {
+    width: 40%;
+}
+
+.defaultTable.typeA td {
+    padding: 20px 80px;
+    background: #f5f5f5;
+}
+
 /* 리스트타입 */
 
 .listTypeDot {
     margin-top: 20px;
 }
 
-.listTypeDot li {
+.listTypeDot li,
+.listTypeDash li {
     position: relative;
     padding-left: 8px;
     margin-left: 15px;
@@ -221,7 +238,8 @@ article h4 .choice {
     color: #444544;
 }
 
-.listTypeDot li:before {
+.listTypeDot li:before,
+.listTypeDash li:before {
     content: '';
     display: block;
     position: absolute;
@@ -234,4 +252,146 @@ article h4 .choice {
 
 .listTypeDot li+li {
     margin-top: 10px;
+}
+
+.listTypeDash li {
+    color: #787878;
+}
+
+.listTypeDash li:before {
+    background-image: url(/img/bul_dash.gif);
+}
+
+.listTypeDot .listTypeDash li {
+    margin: 10px 0 0 0;
+}
+
+/* 폼그룹 -input 공통 */
+
+input {
+    width: 100%;
+    max-width: 115px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+input.mw70 {
+    max-width: 70px;
+}
+
+input.mw170 {
+    max-width: 170px;
+}
+
+input.mw200 {
+    max-width: 200px;
+}
+
+input.mw260 {
+    max-width: 260px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 20px;
+}
+
+/* 폼그룹 -select 공통 */
+
+select {
+    padding: 7px 24px 5px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('/img/select_arrow.png') no-repeat 88% 50%;
+    /* 화살표 아이콘 추가 */
+}
+
+select::-ms-expand {
+    display: none;
+    /* 화살표 없애기 for IE10, 11*/
+}
+
+select.w200 {
+    width: 100%;
+    max-width: 200px;
+    background-position: 94% 50%;
+}
+
+/* 버튼 공통 */
+
+.btnWrap {
+    margin-top: 50px;
+}
+
+.btn {
+    border: 1px solid #a8adb0;
+    color: #444;
+}
+
+.btnS {
+    height: 29px;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 29px;
+}
+
+.btnL {
+    width: 154px;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+.btnTypeA {
+    background: #f2f2f2;
+}
+
+.btnTypeB {
+    background: #fff;
+}
+
+.btnTypePrev,
+.btnTypeNext {
+    border: 0 none;
+    background: #40464d;
+    font-weight: 700;
+    color: #fff;
+}
+
+.btnTypeNext {
+    background: #d91f26;
+}
+
+/* 탭 공통 */
+
+.tabs {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.tabs li {
+    float: left;
+    width: 14%;
+}
+
+.tabs li a {
+    display: block;
+    padding: 9px 0;
+    border: 1px solid #bebebe;
+    border-bottom: none;
+    background: #e6e6e6;
+    font-size: 13px;
+    font-weight: 700;
+    color: #808080;
+    text-align: center;
+}
+
+.tabs li.on a {
+    border-color: #4d4d4d;
+    background: #4d4d4d;
+    color: #fff;
 }

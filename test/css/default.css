@@ -536,62 +536,6 @@ input[type="text"]::-ms-clear {
     top: 0;
 }
 
-/* 폼그룹 -input 공통 */
-
-input {
-    width: 100%;
-    max-width: 115px;
-    padding: 5px 10px;
-    box-sizing: border-box;
-}
-
-input.mw70 {
-    max-width: 70px;
-}
-
-input.mw170 {
-    max-width: 170px;
-}
-
-input.mw260 {
-    max-width: 260px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    width: 20px;
-}
-
-/* 폼그룹 -select 공통 */
-
-select {
-    padding: 7px 24px 5px 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url('/img/select_arrow.png') no-repeat 88% 50%;
-    /* 화살표 아이콘 추가 */
-}
-
-select::-ms-expand {
-    display: none;
-    /* 화살표 없애기 for IE10, 11*/
-}
-
-/* 버튼 공통 */
-
-.btn {
-    border: 1px solid #a8adb0;
-    color: #444;
-}
-
-.btnS {
-    height: 29px;
-    padding: 0 10px;
-    font-size: 13px;
-    line-height: 29px;
-}
-
-.btnTypeA {
-    background: #f2f2f2;
+.mb50 {
+    margin-bottom: 50px;
 }

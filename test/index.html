@@ -332,18 +332,20 @@
                             <tr>
                                 <th>세금우대한도잔여</th>
                                 <td>
-                                    <span>
+                                    <span class="heightCen">
                                         <em>0</em> 원
                                     </span>
-                                    <button type="button" class="btn btnS btnTypeA">
-                                        <span>한도조회</span>
-                                    </button>
+                                    <p class="fr">
+                                        <button type="button" class="btn btnS btnTypeA">
+                                            <span>한도조회</span>
+                                        </button>
+                                    </p>
                                 </td>
                                 <th>세금우대한도설정</th>
                                 <td>
                                     <span class="inputArea">
-                                        <label for="maxPrice">세금우대한도설정</label>
-                                        <input id="maxPrice" value="" placeholder="">
+                                        <label for="maxPrice" class="blind">세금우대한도설정</label>
+                                        <input id="maxPrice" value="" placeholder="" class="mw170">
                                     </span>
                                     원
                                 </td>
@@ -367,7 +369,7 @@
                 <h4>납입정보</h4>
 
                 <ul class="tabs">
-                    <li>
+                    <li class="on">
                         <a href="#tab1">즉시출금</a>
                     </li>
                     <li>
@@ -388,8 +390,8 @@
                                     <th>납입금액</th>
                                     <td>
                                         <span class="inputArea">
-                                            <label for="payPrice">납입금액</label>
-                                            <input id="payPrice" value="" placeholder="">
+                                            <label for="payPrice" class="blind">납입금액</label>
+                                            <input id="payPrice" value="" placeholder="" class="mw200">
                                         </span>
                                         원
                                     </td>
@@ -397,13 +399,13 @@
                                 <tr>
                                     <th>계좌번호</th>
                                     <td>
-                                        <select>
+                                        <select class="w200">
                                             <option>은행선택</option>
                                             <option>국민은행</option>
                                         </select>
                                         <span class="inputArea">
-                                            <label for="account">계좌번호</label>
-                                            <input id="account" value="" placeholder="-없이 입력">
+                                            <label for="account" class="blind">계좌번호</label>
+                                            <input id="account" value="" placeholder="-없이 입력" class="mw200">
                                         </span>
                                         <button type="button" class="btn btnS btnTypeA">
                                             <span>계좌확인</span>
@@ -414,8 +416,8 @@
                                     <th>예금주명</th>
                                     <td>
                                         <span class="inputArea">
-                                            <label for="accountName">예금주명</label>
-                                            <input id="accountName" value="" placeholder="">
+                                            <label for="accountName" class="blind">예금주명</label>
+                                            <input id="accountName" value="" placeholder="" class="mw200">
                                         </span>
                                     </td>
                                 </tr>
@@ -440,8 +442,8 @@
                                     <th>납입금액</th>
                                     <td>
                                         <span class="inputArea">
-                                            <label for="payPrice">납입금액</label>
-                                            <input id="payPrice" value="" placeholder="">
+                                            <label for="payPrice" class="blind">납입금액</label>
+                                            <input id="payPrice" value="" placeholder="" class="mw200">
                                         </span>
                                         원
                                     </td>
@@ -449,7 +451,7 @@
                                 <tr>
                                     <th>입금전용계좌</th>
                                     <td>
-                                        <select>
+                                        <select class="w200">
                                             <option>은행선택</option>
                                             <option>국민은행</option>
                                         </select>
@@ -494,8 +496,8 @@
                                 <th>자동이체금액</th>
                                 <td colspan="3">
                                     <span class="inputArea">
-                                        <label for="autoPrice">자동이체금액</label>
-                                        <input id="autoPrice" value="" placeholder="">
+                                        <label for="autoPrice" class="blind">자동이체금액</label>
+                                        <input id="autoPrice" value="" placeholder="" class="mw200">
                                     </span>
                                     원
                                 </td>
@@ -503,13 +505,13 @@
                             <tr>
                                 <th>계좌번호</th>
                                 <td colspan="3">
-                                    <select>
+                                    <select class="w200">
                                         <option>은행선택</option>
                                         <option>국민은행</option>
                                     </select>
                                     <span class="inputArea">
-                                        <label for="autoAcc">계좌번호</label>
-                                        <input id="autoAcc" value="" placeholder="-없이 입력">
+                                        <label for="autoAcc" class="blind">계좌번호</label>
+                                        <input id="autoAcc" value="" placeholder="-없이 입력" class="mw200">
                                     </span>
                                     <button type="button" class="btn btnS btnTypeA">
                                         <span>계좌확인</span>
@@ -520,8 +522,8 @@
                                 <th>예금주명</th>
                                 <td>
                                     <span class="inputArea">
-                                        <label for="autoName">예금주명</label>
-                                        <input id="autoName" value="" placeholder="">
+                                        <label for="autoName" class="blind">예금주명</label>
+                                        <input id="autoName" value="" placeholder="" class="mw200">
                                     </span>
                                 </td>
                                 <th>신청내용</th>
@@ -531,8 +533,8 @@
                                 <th>이체일</th>
                                 <td>
                                     <select>
-                                        <option>은행선택</option>
-                                        <option>국민은행</option>
+                                        <option>5일</option>
+                                        <option>10일</option>
                                     </select>
                                 </td>
                                 <th>자동이체시작일</th>
@@ -541,7 +543,7 @@
                         </tbody>
                     </table>
                 </div>
-                <ul class="listTypeDot ">
+                <ul class="listTypeDot mb50">
                     <li>자동이체를 신청하시면 자동이체시작일일부터 매월 자동이체금액을 이체합니다.
                         <br/>예) 자동이체시작일 : 2015년, 이체일 : 25일 을 선택한 경우 2015년 11월 부터 매월 25일 자동이체금액을 자동으로 청구합니다.)</li>
                     <li>이체일에 통장 잔액부족 등 기타 사유로 인해 이체되지 못할 경우 재 이체하지 않습니다.(자유납입이므로 매월 한번만 이체)</li>
@@ -561,7 +563,7 @@
                                         <label for="autoAgree">자동이체약관동의</label>
                                     </span>
                                 </td>
-                                <td>
+                                <td class="alignR">
                                     <button type="button" class="btn btnS btnTypeB">
                                         <span>전문보기</span>
                                     </button>
@@ -572,7 +574,7 @@
                 </div>
             </article>
 
-            <div class="btnWrap">
+            <div class="btnWrap alignC">
                 <button type="button" class="btn btnL btnTypePrev">
                     <span>이전</span>
                 </button>
