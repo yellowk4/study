@@ -504,7 +504,7 @@ select.w200 {
 
 .tabs li {
     float: left;
-    width: 14%;
+    width: 130px;
 }
 
 .tabs li a {
