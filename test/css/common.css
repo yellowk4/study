@@ -137,6 +137,10 @@
 
 /* 서브 컨텐츠 article */
 
+article {
+    margin-bottom: 50px;
+}
+
 article h4 {
     margin-bottom: 15px;
     font-size: 18px;
@@ -151,16 +155,15 @@ article h4 .choice {
 /* 공통 테이블 요소 */
 
 .defaultTable {
-    margin-bottom: 50px;
     border-top: 2px solid #4d4d4d;
 }
 
 .defaultTable .widthS {
-    width: 14%;
+    width: 15%;
 }
 
 .defaultTable .widthM {
-    width: 36%;
+    width: 35%;
 }
 
 .defaultTable .widthL {
@@ -189,10 +192,46 @@ article h4 .choice {
     color: #717272;
 }
 
-.defaultTable .inputArea+select {
+.defaultTable .inputArea+select,
+.defaultTable .inputArea+.inputArea,
+.defaultTable .inputArea+.btn {
     margin-left: 10px;
+}
+
+.defaultTable .inputArea input[type="radio"]+label,
+.defaultTable .inputArea input[type="checkbox"]+label {
+    margin-right: 20px;
 }
 
 .defaultTable .lineChg {
     margin-bottom: 10px;
+}
+
+/* 리스트타입 */
+
+.listTypeDot {
+    margin-top: 20px;
+}
+
+.listTypeDot li {
+    position: relative;
+    padding-left: 8px;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #444544;
+}
+
+.listTypeDot li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 13px;
+    background: url(/img/bul_dot.gif) no-repeat left center;
+}
+
+.listTypeDot li+li {
+    margin-top: 10px;
 }
