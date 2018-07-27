@@ -200,8 +200,8 @@ article h4 .choice {
     margin-left: 10px;
 }
 
-.defaultTable .inputArea input[type="radio"]+label,
-.defaultTable .inputArea input[type="checkbox"]+label {
+.defaultTable input[type="radio"]+label,
+.defaultTable input[type="checkbox"]+label {
     margin-right: 20px;
 }
 
