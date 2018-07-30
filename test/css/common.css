@@ -112,7 +112,7 @@
     display: inline-block;
     width: 48px;
     height: 48px;
-    background: #d91f26 url(./img/ico_doc.png) no-repeat 50% 50%;
+    background: #d91f26 url(../img/ico_doc.png) no-repeat 50% 50%;
     background-size: 24px 30px;
     border-radius: 100%;
     vertical-align: middle;
@@ -247,7 +247,7 @@ article h4 .choice {
     left: 0;
     width: 8px;
     height: 13px;
-    background: url(./img/bul_dot.gif) no-repeat left center;
+    background: url(../img/bul_dot.gif) no-repeat left center;
 }
 
 .listTypeDot li+li {
@@ -259,7 +259,7 @@ article h4 .choice {
 }
 
 .listTypeDash li:before {
-    background-image: url(./img/bul_dash.gif);
+    background-image: url(../img/bul_dash.gif);
 }
 
 .listTypeDot .listTypeDash li {
@@ -432,7 +432,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url('./img/select_arrow.png') no-repeat 88% 50%;
+    background: url('../img/select_arrow.png') no-repeat 88% 50%;
     /* 화살표 아이콘 추가 */
 }
 
